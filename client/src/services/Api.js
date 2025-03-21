@@ -18,7 +18,7 @@ const formatBookData = (book) => ({
 export const fetchBooks = async () => {
     try {
         const response = await fetch(
-            'https://www.googleapis.com/books/v1/volumes?q=bestseller+2025&maxResults=5'
+            'https://www.googleapis.com/books/v1/volumes?q=bestseller+2024&maxResults=5'
         );
         if (!response.ok) throw new Error('Failed to fetch data');
         const data = await response.json();

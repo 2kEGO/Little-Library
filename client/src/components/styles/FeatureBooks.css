@@ -34,6 +34,7 @@
     width: 100%;
 
     flex-wrap: wrap;
+    /* overflow-wrap: break-word; */
 
 }
 
@@ -44,6 +45,7 @@
     align-items: center;
 
     height: 100%;
+    width: 10%;
 }
 
 /* .book-list-item img {
@@ -51,6 +53,6 @@
     height: 100%;
 } */
 
-.book-list-item h2 {
+.book-list-item p {
 
 }
