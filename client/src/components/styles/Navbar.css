@@ -1,7 +1,9 @@
 .nav-container {
-    padding: .1em;
+    padding: .5em;
 
-    margin: 0 1em;
+    background-color: antiquewhite;
+
+    position: sticky;
 }
 
 .nav-wrapper {
@@ -15,6 +17,8 @@
     width: 100%;
     height: clamp(3vh, 6vh, 7vh);
     
+    margin: 0 auto;
+    
 }
 
 .navBar-left {
@@ -25,10 +29,25 @@
     
 }
 
+.logo {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo svg {
+    height: 25px;
+    width: 25px;
+    padding: 1em;
+}
+
 .navBar-item{
     display: inline-flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 
     list-style: none;
 
@@ -37,13 +56,29 @@
 }
 
 .navBar-item li {
-    padding: .1em;
+    padding: 1em;
     margin-left: 2em;
 
     color: black;
     font-family: var(--font-inter);
+
+    cursor: pointer;
 }
 
 .navBar-item li a{
     text-decoration: none;
+
+}
+
+
+
+.navBar-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+#searchbar{
+    height: 2em;
 }

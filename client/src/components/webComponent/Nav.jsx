@@ -1,8 +1,8 @@
 import React from 'react'
 import '../styles/Navbar.css'
 import Logo from '../Reusable/Logo.jsx'
-import {faAddressBook} from "@fortawesome/free-regular-svg-icons"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faAddressBook, faUser} from "@fortawesome/free-regular-svg-icons"
+
 const NavBar = () => {
 
     const navItems = [
@@ -19,7 +19,7 @@ const NavBar = () => {
 
                 <div className="navBar-left">
                     <div className='logo'>
-                        <FontAwesomeIcon icon={faAddressBook} />
+                        <Logo icon={faAddressBook} />
                     </div>
                     <ul className='navBar-item'>
                         {navItems.map((item) => (
@@ -29,9 +29,10 @@ const NavBar = () => {
                 </div>
 
                 <div className="navBar-right">
-                    <input type="text" placeholder='Search all books...'/>
-                    <div className='signIn'>
 
+                    <input type="text" placeholder='Search all books...' id='searchbar' />
+                    <div className='logo'>
+                        <Logo icon={faUser}/>
                     </div>
                 </div>
     
