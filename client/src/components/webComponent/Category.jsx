@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { fetchCategory } from '../../services/Api.js';
+import '../styles/FeatureBooks.css';
 
 const Category = ({category}) => {
 
@@ -27,10 +28,24 @@ return (
         <div className="book-list-container">         
             <ul className='book-list'>
                 {books.map((book, index) => (
+                // <li key={index} className='book-list-item'>
+                //     {book.image && <img src={book.image} alt={book.title} />}
+                //     <p>{book.title}</p>
+                // </li>
+
                 <li key={index} className='book-list-item'>
                     {book.image && <img src={book.image} alt={book.title} />}
                     <p>{book.title}</p>
+                    {/* <div className='books-detail'>
+                        <span>Author: {book.author}</span>
+                        <span>Categories: {book.categories}</span>
+                        <span>Publisher: {book.publisher}</span>
+                        <span>Language: {book.language}</span>
+                        <span>Description: {book.description}</span>
+                        <span></span>
+                    </div> */}
                 </li>
+                
                 ))}
             </ul>
         </div> 

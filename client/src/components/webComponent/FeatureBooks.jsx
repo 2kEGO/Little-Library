@@ -35,8 +35,6 @@ const FeatureBooks = () => {
                 </ul>
             </div> 
 
-            
-
           </div>
         </div>
     );

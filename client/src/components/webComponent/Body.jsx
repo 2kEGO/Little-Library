@@ -12,6 +12,10 @@ const Body = () => {
             <FeatureBooks/>
             <Category category={"Self-help"}/>
             <Category category={"Fiction"}/>
+            <Category category={"Mystery"}/>
+            <Category category={"Fantasy"}/>
+            <Category category={"Romance"}/>
+            <Category category={"Non-Fiction"}/>
             
         </div>
     </div>
